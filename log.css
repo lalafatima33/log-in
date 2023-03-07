@@ -1,0 +1,148 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,100;1,400&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: 3f4f6;
+    color: #1d1e22;
+    font-family: Roboto, sans-serif;
+  }
+  .container {
+  }
+  .login-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+  }
+  .login-card {
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.2), 0 1px 50px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 45px;
+  }
+  .login-card-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 65px;
+    margin:65px 30px 30px;
+    position: relative;
+    width: 100%;
+    height: auto;
+
+  }
+  .login-tag {
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 0.85px;
+  }
+  .form-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  input[type=email]{
+    padding: 5px 20px;
+    width: calc(100% -125px);
+    height: 40px;
+    background-color: #f3f4f6;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+  }
+  .password-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  input[type=password]{
+    padding: 5px 20px;
+    width: calc(100% -125px);
+    height: 40px;
+    background-color: #f3f4f6;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+  }
+  .forgot-password-item a{
+color: #1d1e22;
+text-decoration: none;
+font-weight: 700;
+font-size: 15px;
+transition: color 0.4s;
+  }
+  .forgot-password-item a:hover,
+  .forgot-password-item a:active{
+    color: #858585;
+  }
+  button[type=button]{
+    position: relative;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 30px 0px 75px;
+    width: 60%;
+    height: 60px;
+    color: white;
+    background: linear-gradient(to right, #1d2b64 0%, #a84286 50%, #f8cdda 100%);
+    font-size: 18px;
+    
+    font-weight: 700;
+    box-shadow: 0 1px 15px 0 rgba(255, 0, 0, 0.1), 0 -1px 15px 0 rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.85px;
+   z-index: 1;
+  }
+  button[type=button]::before{
+    content: '';
+    position: absolute;
+    top: 0;right: 0;left: 0;bottom: 0;
+    background: linear-gradient(-135deg, #4a69e2 0%, #ff6c98 100%);
+    border-radius: 25px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.65s;
+  }
+  button[type=button]:hover::before{
+    opacity: 1;
+  }
+  .button-item {
+  }
+  .create-account-item {
+    position: absolute;
+    bottom: 30px;
+  }
+  .create-account-item a{
+    color: #1d1e22;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.4s;
+  }
+  .create-account-item a span{
+    font-weight: 700;
+  }
+  .create-account-item a:hover,
+  .create-account-item a:active{
+    color: #858585;
+  }
